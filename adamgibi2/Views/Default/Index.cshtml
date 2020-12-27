@@ -1,0 +1,108 @@
+﻿@using adamgibi2.Models.Siniflar
+@model List<Blog> 
+
+
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_TestLayout";
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<body>
+
+
+    <div class="header-banner">
+        <div class="wrap">
+            <div class="banner">
+                <div class="indent">
+                    <h2 class="indent-left margin-bot" style="margin-left:80px">Tatil & Seyahat Blogum</h2>
+                    <div class="banner-left">
+                        <div class="con-text">
+                            <div class="grid1-img">
+                                <img src="/images/glass.png" alt="">
+                            </div>
+                            <div class="grid1-desc">
+                                <p>Restaurants</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="con-text">
+                            <div class="grid1-img">
+                                <img src="/images/flight.png" alt="">
+                            </div>
+                            <div class="grid1-desc">
+                                <p>Flights</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="con-text">
+                            <div class="grid1-img">
+                                <img src="/images/group.png" alt="">
+                            </div>
+                            <div class="grid1-desc">
+                                <p>Things to do</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="con-text">
+                            <div class="grid1-img">
+                                <img src="/images/key.png" alt="">
+                            </div>
+                            <div class="grid1-desc">
+                                <p>Vacation Rents</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="header_bottom_right_images">
+
+                        <div class="slider"style="width:650px;height:380px;">
+                            <ul class="rslides" id="slider1">
+                                @foreach (var x in Model)
+                                {
+                                <li><img src="@x.BlogImage" alt=""></li>
+                               @* @ <li><img src="/images/img2.jpg" alt=""></li>
+                                <li><img src="/images/img3.jpg" alt=""></li>
+                                <li><img src="/images/img4.jpg" alt=""></li> *@
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class"content">
+        <div class="wrap">
+            <div class="wrapper">
+                <div class="con-top">
+
+                    <h3>Seyahat Blogum'a Hoşgeldiniz!</h3>
+                    <p>Bu sitede bu zamana kadar gezip gördüğüm, ve gezeceğim yerlerin blogları yer alacak. Umarım size seyahatleriniz öncesinde ufak bir tanıtım olur ya da merak ettiğiniz yerler hakkında fikir edinmenizi sağlar. </p>
+                </div>
+                @await Component.InvokeAsync("SonUcBlog")
+
+                <div class="grids">
+                    <div class="box1">
+                        @await Component.InvokeAsync("SonOnBlog")
+                        @await Component.InvokeAsync("EnBegendigimBlog")
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

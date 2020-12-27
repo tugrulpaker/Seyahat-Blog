@@ -1,0 +1,161 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\slider.css" />
+    <Content Remove="wwwroot\css\style.css" />
+    <Content Remove="wwwroot\js\index.html" />
+    <Content Remove="wwwroot\js\jquery.min.js" />
+    <Content Remove="wwwroot\js\responsiveslides.min.js" />
+    <Content Remove="wwwroot\images\about_banner.jpg" />
+    <Content Remove="wwwroot\images\arrows.png" />
+    <Content Remove="wwwroot\images\but.png" />
+    <Content Remove="wwwroot\images\contact.png" />
+    <Content Remove="wwwroot\images\dest_banner.jpg" />
+    <Content Remove="wwwroot\images\flight.png" />
+    <Content Remove="wwwroot\images\glass.png" />
+    <Content Remove="wwwroot\images\group.png" />
+    <Content Remove="wwwroot\images\head_bg.jpg" />
+    <Content Remove="wwwroot\images\head_bot.gif" />
+    <Content Remove="wwwroot\images\img1.jpg" />
+    <Content Remove="wwwroot\images\img2.jpg" />
+    <Content Remove="wwwroot\images\img3.jpg" />
+    <Content Remove="wwwroot\images\img4.jpg" />
+    <Content Remove="wwwroot\images\key.png" />
+    <Content Remove="wwwroot\images\link1-bg.gif" />
+    <Content Remove="wwwroot\images\logo.png" />
+    <Content Remove="wwwroot\images\pic.jpg" />
+    <Content Remove="wwwroot\images\pic1.jpg" />
+    <Content Remove="wwwroot\images\pic10.jpg" />
+    <Content Remove="wwwroot\images\pic2.jpg" />
+    <Content Remove="wwwroot\images\pic3.jpg" />
+    <Content Remove="wwwroot\images\pic4.jpg" />
+    <Content Remove="wwwroot\images\pic5.jpg" />
+    <Content Remove="wwwroot\images\pic6.jpg" />
+    <Content Remove="wwwroot\images\pic7.jpg" />
+    <Content Remove="wwwroot\images\pic8.jpg" />
+    <Content Remove="wwwroot\images\pic9.jpg" />
+    <Content Remove="wwwroot\css\bootstrap3.css" />
+    <Content Remove="wwwroot\css\style3.css" />
+    <Content Remove="wwwroot\images\avatar.png" />
+    <Content Remove="wwwroot\images\icon3.png" />
+    <Content Remove="wwwroot\images\logo3.jpg" />
+    <Content Remove="wwwroot\images\man.jpg" />
+    <Content Remove="wwwroot\images\more.png" />
+    <Content Remove="wwwroot\images\post1.jpg" />
+    <Content Remove="wwwroot\images\post2.jpg" />
+    <Content Remove="wwwroot\images\post3.jpg" />
+    <Content Remove="wwwroot\images\search.png" />
+    <Content Remove="wwwroot\js\about3.html" />
+    <Content Remove="wwwroot\js\contact3.html" />
+    <Content Remove="wwwroot\js\index3.html" />
+    <Content Remove="wwwroot\js\single3.html" />
+    <Content Remove="wwwroot\js\w3layouts-License.txt" />
+    <Content Remove="wwwroot\js\easing.js" />
+    <Content Remove="wwwroot\js\jquery3.min.js" />
+    <Content Remove="wwwroot\js\move-top.js" />
+    <Content Remove="wwwroot\css\style6.css" />
+    <Content Remove="wwwroot\images\b4.jpg" />
+    <Content Remove="wwwroot\js\index6.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="web\w3layouts-License.txt" />
+    <None Remove="web\about.html" />
+    <None Remove="web\destinations.html" />
+    <None Remove="web\contact.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\css\slider.css" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\js\index.html" />
+    <None Include="wwwroot\js\jquery.min.js" />
+    <None Include="wwwroot\js\responsiveslides.min.js" />
+    <None Include="wwwroot\images\about_banner.jpg" />
+    <None Include="wwwroot\images\arrows.png" />
+    <None Include="wwwroot\images\but.png" />
+    <None Include="wwwroot\images\contact.png" />
+    <None Include="wwwroot\images\dest_banner.jpg" />
+    <None Include="wwwroot\images\flight.png" />
+    <None Include="wwwroot\images\glass.png" />
+    <None Include="wwwroot\images\group.png" />
+    <None Include="wwwroot\images\head_bg.jpg" />
+    <None Include="wwwroot\images\head_bot.gif" />
+    <None Include="wwwroot\images\img1.jpg" />
+    <None Include="wwwroot\images\img2.jpg" />
+    <None Include="wwwroot\images\img3.jpg" />
+    <None Include="wwwroot\images\img4.jpg" />
+    <None Include="wwwroot\images\key.png" />
+    <None Include="wwwroot\images\link1-bg.gif" />
+    <None Include="wwwroot\images\logo.png" />
+    <None Include="wwwroot\images\pic.jpg" />
+    <None Include="wwwroot\images\pic1.jpg" />
+    <None Include="wwwroot\images\pic10.jpg" />
+    <None Include="wwwroot\images\pic2.jpg" />
+    <None Include="wwwroot\images\pic3.jpg" />
+    <None Include="wwwroot\images\pic4.jpg" />
+    <None Include="wwwroot\images\pic5.jpg" />
+    <None Include="wwwroot\images\pic6.jpg" />
+    <None Include="wwwroot\images\pic7.jpg" />
+    <None Include="wwwroot\images\pic8.jpg" />
+    <None Include="wwwroot\images\pic9.jpg" />
+    <None Include="wwwroot\css\bootstrap3.css" />
+    <None Include="wwwroot\css\style3.css" />
+    <None Include="wwwroot\images\avatar.png" />
+    <None Include="wwwroot\images\icon3.png" />
+    <None Include="wwwroot\images\logo3.jpg" />
+    <None Include="wwwroot\images\man.jpg" />
+    <None Include="wwwroot\images\more.png" />
+    <None Include="wwwroot\images\post1.jpg" />
+    <None Include="wwwroot\images\post2.jpg" />
+    <None Include="wwwroot\images\post3.jpg" />
+    <None Include="wwwroot\images\search.png" />
+    <None Include="wwwroot\js\about3.html" />
+    <None Include="wwwroot\js\contact3.html" />
+    <None Include="wwwroot\js\index3.html" />
+    <None Include="wwwroot\js\single3.html" />
+    <None Include="wwwroot\js\w3layouts-License.txt" />
+    <None Include="wwwroot\js\easing.js" />
+    <None Include="wwwroot\js\jquery3.min.js" />
+    <None Include="wwwroot\js\move-top.js" />
+    <None Include="wwwroot\css\style6.css" />
+    <None Include="wwwroot\images\b4.jpg" />
+    <None Include="wwwroot\js\index6.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="Views\Default\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="Models\Siniflar\" />
+    <Folder Include="Data\" />
+    <Folder Include="Views\About\" />
+    <Folder Include="web3\css\" />
+    <Folder Include="web3\images\" />
+    <Folder Include="web3\js\" />
+    <Folder Include="Views\Bloglar\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\SonUcBlog\" />
+    <Folder Include="Views\Shared\Components\SonOnBlog\" />
+    <Folder Include="Views\Shared\Components\EnBegendigimBlog\" />
+    <Folder Include="Views\Shared\Components\EnBegendigimBlogSagTaraf\" />
+    <Folder Include="Views\Adminler\" />
+    <Folder Include="Views\Shared\Components\YorumYap\" />
+    <Folder Include="web6\css\" />
+    <Folder Include="web6\images\" />
+    <Folder Include="Views\AdmininGirisi\" />
+    <Folder Include="Views\Iletisimler\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+</Project>
