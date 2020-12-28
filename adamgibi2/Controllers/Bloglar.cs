@@ -37,8 +37,12 @@ namespace adamgibi2.Controllers
             by.Deger1 = _db.Blogs.Where(x => x.ID == id).ToList();
             by.Deger2 = _db.Yorumlars.Where(x => x.Blogid == id).ToList();
             return View(by);
+            
+            
         }
        
+      
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]

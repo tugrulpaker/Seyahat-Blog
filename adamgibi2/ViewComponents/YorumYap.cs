@@ -16,9 +16,16 @@ namespace adamgibi2.ViewComponents
 
         }
 
-        public IViewComponentResult Invoke()
+      
 
-        {
+        [HttpGet]
+        public IViewComponentResult Invoke(Blog id)
+
+        { 
+            
+            ViewBag.deger = id;
+
+           
 
             return View();
         }

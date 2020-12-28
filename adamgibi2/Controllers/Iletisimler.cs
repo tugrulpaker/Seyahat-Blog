@@ -13,6 +13,8 @@ namespace adamgibi2.Controllers
     public class Iletisimler : Controller
     {
 
+        public List<Iletisim> d;
+
         public ApplicationDbContext _db;
         public Iletisimler(ApplicationDbContext db)
 
@@ -26,6 +28,8 @@ namespace adamgibi2.Controllers
 
 
         // GET: /<controller>/
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> BizeUlas(Iletisim p)
 
         {
@@ -33,6 +37,16 @@ namespace adamgibi2.Controllers
             await _db.SaveChangesAsync();
             return Redirect("/");
         }
+
+        public IActionResult IletisimGoruntule()
+        {
+            d = _db.Iletisims.ToList();
+
+
+            return View(d);
+
+        }
+
 
             
         
