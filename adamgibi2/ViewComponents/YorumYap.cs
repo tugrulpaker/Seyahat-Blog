@@ -19,7 +19,7 @@ namespace adamgibi2.ViewComponents
       
 
         [HttpGet]
-        public IViewComponentResult Invoke(Blog id)
+        public IViewComponentResult Invoke(int id)
 
         { 
             

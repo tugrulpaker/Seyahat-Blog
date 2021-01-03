@@ -48,6 +48,7 @@ namespace adamgibi2.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> YorumYap(Yorumlar y)
         {
+            
             _db.Yorumlars.Add(y);
             await _db.SaveChangesAsync();
             return Redirect("/");

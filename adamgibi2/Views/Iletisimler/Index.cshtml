@@ -1,24 +1,50 @@
 ﻿
 
 
-    @{
-        ViewData["Title"] = "Index";
-        Layout = "_TestLayout";
-    }
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_TestLayout";
+}
 
 
-<div class="content-form">
-
-    <h3>Leave a comment</h3>
-    <form method="post" asp-controller="Iletisimler" asp-action="BizeUlas">
 
 
-        <input type="text" placeholder="Ad Soyad" name="AdSoyad" required />
-        <input type="text" placeholder="Mail" name="Mail" required />
-        <input type="text" placeholder="Konu" name="Konu" required />
+<!DOCTYPE HTML>
+<html>
+<head>
 
-        <textarea placeholder="Mesaj" name="Mesaj"></textarea>
-        <input type="submit" value="SEND" />
-    </form>
+    <link href="/css/contactcss.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+
+</head>
+<body>
+
+<div class="container">
+    <div style="text-align:center">
+        <h2>Contact Us</h2>
+        <p>Swing by for a cup of coffee, or leave us a message:</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="/images/map.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <form method="post" asp-controller="Iletisimler" asp-action="BizeUlas">
+                <label for="fname">Ad Soyad</label>
+                <input type="text" placeholder="Ad Soyad" name="AdSoyad" required />
+                <label for="lname">Mail</label>
+                <input type="text" placeholder="Mail" name="Mail" required />
+                <label for="lname">Konu</label>
+                <input type="text" placeholder="Konu" name="Konu" required />
+
+                <label for="subject">Subject</label>
+                <textarea id="Mesaj" name="Mesaj" placeholder="Mesajınız..." style="height:170px"></textarea>
+                <input type="submit" value="SEND">
+            </form>
+        </div>
+    </div>
 </div>
+    </body>
+</html>

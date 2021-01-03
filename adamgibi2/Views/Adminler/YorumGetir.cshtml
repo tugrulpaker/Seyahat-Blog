@@ -8,7 +8,7 @@
 
 <h2>Yorum Güncelleme Sayfası</h2>
 <br />
-@using (Html.BeginForm("YorumGuncelle", "Adminler", FormMethod.Post)) // Blog güncelle action result devrey girdiginde çalısacak ,, bloggüncelle adminler controllerinda ,,Sayfada butona tıklanıp post islemi gerçekletirildiginde calisacak
+@using (Html.BeginForm("YorumGuncelle", "Adminler", FormMethod.Post)) // Yorum güncelle action result devrey girdiginde çalısacak ,, bloggüncelle adminler controllerinda ,,Sayfada butona tıklanıp post islemi gerçekletirildiginde calisacak
 {
     @Html.LabelFor(x => x.ID)
     @Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly = "readonly" })
@@ -23,7 +23,7 @@
     @Html.TextAreaFor(x => x.Yorum,15,1, new { @class = "form-control" })
     <br />
     
-    <button class="btn btn-success">Blog Guncelle</button>
+    <button class="btn btn-success">Yorum Guncelle</button>
 
 
 

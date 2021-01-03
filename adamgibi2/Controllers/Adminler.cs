@@ -33,6 +33,7 @@ namespace adamgibi2.Controllers
             return View();
 
         }
+        [Authorize]
         [HttpPost]
         public IActionResult YeniBlog(Blog p)
         {
@@ -52,12 +53,14 @@ namespace adamgibi2.Controllers
             return RedirectToAction("Index");
 
         }
+        [Authorize]
         public IActionResult BlogGetir (int id)
         {
             var bl = _db.Blogs.Find(id);
             return View("BlogGetir", bl);
 
         }
+        
         public IActionResult BlogGuncelle(Blog b)
         {
             var blg = _db.Blogs.Find(b.ID);
@@ -69,6 +72,7 @@ namespace adamgibi2.Controllers
             return RedirectToAction("Index");
 
         }
+        [Authorize]
         public ActionResult YorumListesi()
         {
             var yorumlar = _db.Yorumlars.ToList();
@@ -84,6 +88,7 @@ namespace adamgibi2.Controllers
             return RedirectToAction("YorumListesi");
 
         }
+        [Authorize]
         public IActionResult YorumGetir(int id)
         {
             var yr = _db.Yorumlars.Find(id);
